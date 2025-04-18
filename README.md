@@ -1,4 +1,2 @@
 # group-asep
-html open source project
-
-test brok!
+open source assignment#1
