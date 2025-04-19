@@ -19,7 +19,7 @@ background: #acb4b5;
 .hero{
     height: 100vh;
     width: 100%;
-    background-image: url(hero.png);
+    background-image: url(/image/stinky\ tofu\ 1.jpeg);
     background-position: center;
     background-size: cover;
 }

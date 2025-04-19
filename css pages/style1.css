@@ -1,3 +1,4 @@
+/* 412855024 黃庭豪 justin wangsa*/
 
 * {
     margin: 0;
@@ -5,6 +6,9 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -56,10 +60,12 @@ p {
 
 
 img {
-    max-width: 100%;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
+    max-width: 70%;
+    border-radius: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: 15%;
+    border: 3px solid black;
     border-radius: 4px;
     padding: 5px;
 }
@@ -106,6 +112,41 @@ footer p {
     font-size: 1rem;
 }
 
-.bgn{ 
+body{
+    background-image: url("/image/taiwan1.jpg");
+    height: 10%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+#back-btn {
+    position: absolute;
+    background-color: #213032;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid black;
+    font-weight: bold;
+    padding: 13px 30px;
+    transform: .4s;
+    left: 50px;
+    top: 70px;
+}
+
+#back-btn:hover{
+    background-color: #97a2a3;
+    color: #213032;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+#ytube{
+    position: relative;
+    margin: auto;
+    border: 3px solid black;
+    padding: 5px;
+    text-align: center;
+    top: 50%;
+    left: 17%;
+    
 }
