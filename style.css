@@ -1,146 +1,201 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
 }
-
-body {
+html{
+    scroll-behavior: smooth;
+}
+header{
+width: 100%;
+height: 80px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 100px;
+background: #acb4b5;
+}
+.hero{
     height: 100vh;
+    width: 100%;
+    background-image: url(hero.png);
+    background-position: center;
+    background-size: cover;
+    background-color: red;
+}
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: #213032;
+    margin-right: 40px;
+}
+.nav-bar ul{
     display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-family: sans-serif;
-    background-color: powderblue;
+    list-style: none;
 }
-
-/* Book */
-.book {
-    position: relative;
-    width: 400px;
-    height: 600px;
-    transition: transform 0.5s;
+.nav-bar ul li a{
+    display: block;
+    color: #edffef;
+    font-size: 20px;
+    padding: 8px 25px;
+    transition: .2s;
+    margin: 0 5px;
+    text-decoration: none;
 }
-
-
-.paper {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    perspective: 1500px;
-
-}
-
-.front,
-.back {
-    background-color: white;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    transform-origin: left;
-    transition: transform 0.5s;
-}
-
-.front {
-    z-index: 1;
-    backface-visibility: hidden;
-    border-left: 3px solid powderblue;
-}
-
-.back {
-    z-index: 0;
-}
-
-/* page 1 front and back*/
-.front-content1,
-.back-content1 {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/* page 2 front and back*/
-.front-content2,
-.back-content2 {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    size: 10px;
-}
-
-/* page 3 front and back*/
-.front-content3,
-.back-content3 {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* page 4 front and back*/
-.front-content4,
-.back-content4 {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.back-content1, .back-content2 .back-content, .back-content4 {
-    transform: rotateY(180deg)
-}
-
-/* Paper flip effect */
-.flipped .front,
-.flipped .back {
-    transform: rotateY(-180deg);
-}
-
-/* Controller Buttons */
-button {
-    border: none;
-    background-color: transparent;
+.nav-bar ul li:hover a{
+    background-color: #97a2a3;
+    color: #213032;
     cursor: pointer;
+}
+.content{
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+h1{
+    color: #213032;
+    font-size: 75px;
+    margin: 20px 0px 20px;
+}
+h3{
+    color: #edffef;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+h4{
+    color: #edffef;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.button{
+position: absolute;
+background-color: #213032;
+color: #fff;
+text-decoration: none;
+border: 2px solid black;
+font-weight: bold;
+padding: 13px 30px;
+transform: .4s;
+}
+.button:hover{
+    background-color: #97a2a3;
+    color: #213032;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #314e52;
+}
+.about img{
+    height: auto;
+    width: 430px;
+    border-radius: 20px 0 20px 0;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about h2{
+    color:#edffef;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.about-text p{
+    color: #97a2a3;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+.about-text{
+    width: 500px;
+}
+/*Recipe Section CSS*/
+.recipe{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #213032;
+}
+.recipe h2{
+    color: #edffef;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    position: relative;
+    width: 300px;
+    height: 300px;
     margin: 10px;
-    transition: transform 0.5s;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
 }
-
-button:focus {
-    outline: none;
+.box .card img{
+    width: 100%;
+    height: 1005;
+    object-fit: cover;
+   
 }
-
-button:hover i {
-    color: #636363;
+.box .card .content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background-color: #edffef;
+    color: #182f32;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
 }
-
-i {
-    font-size: 50px;
-    color: gray;
+.box .card:hover .content{
+    opacity: 1;
 }
-
-/* Paper stack order */
-#p1 {
-    z-index: 4;
+.card h3{
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #213032;
 }
-
-#p2 {
-    z-index: 3;
+.box .card p{
+    font-size: 14px;
+    margin-bottom: 10px;
 }
-
-#p3 {
-    z-index: 2;
-}
-
-#p4 {
-    z-index: 1;
-}
+.box .card button{
+    position:relative;
+    background-color: #213032;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid black;
+    font-weight: bold;
+    transform:.4s;
+    padding: 13px 30px;
+ }
+ .box .card button:hover{
+    background-color: #97a2a3;
+    color: #213032;
+    border: 2px solid black;
+    cursor: pointer;
+ }
+ 
