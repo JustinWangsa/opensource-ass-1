@@ -2,20 +2,98 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Recipe book </title>
+    <title>Cook Book</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./main.js" defer></script>
 </head>
+
+
 <body>
 
-    <h1> Recipe Book </h1>
+    <!-- Previous Button -->
+    <button id="prev-btn">
+        <i class="fa-solid fa-arrow-left"></i>
+    </button>
+
+
+    <!-- Book -->
+    <div id="book" class="book">
+        <!-- Paper 1 -->
+        <div id="p1" class="paper">
+
+            <div class="front">
+                <div id="f1" class="front-content1">
+                    <h1>Cooking Book Recipe </h1>
+                </div>
+            </div>
+
+            <div class="back">
+                <div id="b1" class="back-content1">
+                    <h1>Back 1</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Paper 2 -->
+        <div id="p2" class="paper">
+
+            <div class="front">
+            <img src="" alt="" id="busuk">
+                <div id="f2" class="front-content2">
+                    <h1>Front 2</h1>                    
+                </div>
+            </div>
+
+            <div class="back">
+                <div id="b2" class="back-content2">
+                    <h1>Back 2</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Paper 3 -->
+        <div id="p3" class="paper">
+
+            <div class="front">
+                <div id="f3" class="front-content3">
+                    <h1>Front 3</h1>
+                </div>
+            </div>
+
+            <div class="back">
+                <div id="b3" class="back-content3">
+                    <h1>Back 3</h1>
+                </div>
+            </div>
+        </div>
+        
+        <div id="p4" class="paper">
+
+            <div class="front">
+                <div id="f4" class="front-content4">
+                    <h1>Front 4</h1>
+                </div>
+            </div>
+
+            <div class="back">
+                <div id="b4" class="back-content4">
+                    <h1>Back 4</h1>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
 
 
 
-    <h5> 黃庭豪 justin wangsa 412855024</h5>
-    
-
-    
-    
+    <!-- Next Button -->
+    <button id="next-btn">
+        <i class="fa-solid fa-arrow-right"></i>
+    </button>
+        
 </body>
 </html>
