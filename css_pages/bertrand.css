@@ -145,10 +145,6 @@ span {
     font-weight: var(--fw-700);
 }
 
-[data-cell="nutrient-value"] {
-    color: var(--clr-Nutmeg);
-    font-weight: var(--fw-600);
-}
 
 li {
     padding-left: 1rem;
