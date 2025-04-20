@@ -43,6 +43,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 .nav-bar {
     display: flex;
     align-items: center;
@@ -112,8 +113,13 @@ body {
     line-height: 1.5;
     color: var(--clr-Wenge-Brown);
     background: var(--clr-Eggshell);
+    opacity: 0;
+    transition: opacity 1s ease-in;
 }
 
+body.fade-in {
+    opacity: 1;
+  }
 table {
     border-collapse: collapse;
     width: 100%;
@@ -216,6 +222,21 @@ footer {
     text-align: center;
   }
   
+  #scrollTopBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: none;
+    background-color: #854632;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1000;
+  }
+
 /* media query */
 @media (max-width: 500px) {
     .recipe-wrapper {
