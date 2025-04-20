@@ -2,26 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="stylesheet" href="../css pages/bertrand.css">
-  
-  <title>Frontend Mentor | Recipe page</title>
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  <main class="wrapper">
+  <header>
+    <div class="nav-bar">
+      <div class="logo"> Bertrand's Recipe</div>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Ingredients">Ingredients</a></li>
+            <li><a href="#Instructions">Instructions</a></li>
+            <li><a href="#Nutrition">Nutrition</a></li>
+            <li><a href="../index.html">Back to Main Page</a></li>
+        </ul>
+    </div>
+</header>
+<main class="wrapper">
     <div class="recipe-wrapper">
+      <section id="Home"></section>
       <img src="https://images.deliveryhero.io/image/fd-tw/LH/pk5x-listing.jpg" alt="" class="recipe-img">
       <div class="recipe-container">
-        <h1 class="recipe-title">Simple Taiwanese Popcorn Chicken Recipe</h1>
+        <h1 class="recipe-title">Simple Taiwanese Popcorn Chicken Recipe
+          <span class="small">(鹹酥雞)</span>
+        </h1>
+        
         <p class="recipe-desc"> A famous Taiwanese night market snack. These crispy chicken bites are marinated in a savory mix, deep-fried to perfection, and finished with fresh Thai basil leaves for a fragrant crunch.</p>
-
         <div class="prep-time">
           <p class="prep-title">Preparation time</p>
           <ul class="prep-list">
@@ -31,8 +37,9 @@
           </ul>
         </div>
 
-        <section class="recipe-ingredients">
+        <section id="Ingredients" class="recipe-ingredients"> 
           <h2>Ingredients</h2>
+          <section id="Ingredients"></section>
           <ul class="ingredient-list">
             <li>500g boneless chicken thighs (cut into bite-size pieces)</li>
             <li>2 tbsp soy sauce</li>
@@ -50,9 +57,8 @@
 
         <hr>
 
-        <section class="recipe-instructions">
+        <section  id="Instructions" class="recipe-instructions">
           <h3>Instructions</h3>
-
           <ol class="instructions-list">
             <li><span>Marinate the chicken: </span> In a bowl, combine soy sauce, rice wine, five-spice powder, pepper, garlic, ginger, and sugar. Add the chicken and mix well. Let marinate for at least 20 minutes.</li>
             <li><span>Optional egg mix: </span> Add a beaten egg to the marinated chicken for extra coating stickiness.</li>
@@ -66,7 +72,7 @@
 
         <hr>
 
-        <section class="nutritional-value">
+        <section id="Nutrition" class="nutritional-value">
           <h4>Nutrition Contain</h4>
           <p>The table below shows nutritional values per serving without the additional fillings.</p>
 
@@ -96,5 +102,10 @@
     </div>
   </main>
 
+  <footer>
+    <div class="attribution">
+      Coded by <a>Bertrand 412856139</a>.
+    </div>
+  </footer>
 </body>
 </html>
