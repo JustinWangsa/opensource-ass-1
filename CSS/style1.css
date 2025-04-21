@@ -19,7 +19,7 @@ body {
 
 
 header {
-    background-color: #333;
+    background-color:#333;
     color: #fff;
     text-align: center;
     padding: 30px 0;
@@ -38,10 +38,26 @@ header p {
 .container {
     max-width: 900px;
     margin: 20px auto;
+    margin-left: 600px;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    transform: translateX(-10%);
+    opacity: 0;
+    animation: showright 1s ease forwards;  
+}
+
+@keyframes showright {
+    0% {
+        transform: translateX(-100%); 
+        opacity: 0; 
+    }
+    100% {
+        transform: translateX(0); 
+        opacity: 1; 
+    }
 }
 
 
@@ -95,21 +111,6 @@ ol {
 ol li {
     font-size: 1.1rem;
     margin-bottom: 8px;
-}
-
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-    font-size: 1rem;
 }
 
 body{
