@@ -1,0 +1,43 @@
+body {
+    font-family: 'Lora', serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  header {
+    font-family: 'Lora', serif;
+    text-align: center;
+  }
+  
+  .image-banner img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+  
+  h1, h2 {
+    color: #d97706; /* Sweet potato vibes */
+  }
+  
+  ul, ol {
+    padding-left: 20px;
+  }
+  
+  button {
+    background-color: #fbbf24;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #f59e0b;
+  }
+  
