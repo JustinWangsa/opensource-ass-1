@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,200;1,300;1,600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -27,16 +28,38 @@
     </header>
 
     <div class="hero">
-        <div class="hero-bg"></div>
-        <div class="hero-content">
-            <h4>Unleash Your Culinary Passion</h4>
-            <h1>Discover Taste Sensations</h1>
-            <h3>Elevate Your Cooking Game</h3>
-            <div class="hero-button">
-                <button>Start Cooking</button>
-            </div>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="../image/stinky_tofu_1.jpeg" style="width:100%">
+            <div class="text">Caption Text</div>
+          </div>
+          <div class="mySlides fade">
+            <img src="../image/popcorn_chicken.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+          </div>
+          <div class="mySlides fade">
+            <img src="../image/taiwan1.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+          </div>
         </div>
-    </div>
+        <br>
+
+        <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        </div>
+
+        <div class="hero-content">
+          <h4>Unleash Your Culinary Passion</h4>
+          <h1>Discover Taste Sensations</h1>
+          <h3>Elevate Your Cooking Game</h3>
+          <div class="hero-button">
+            <button>Start Cooking</button>
+          </div>
+        </div>
+      </div>
+      
 
     <!----About Section Start---------------------------------->
     <section class="about">
@@ -57,8 +80,6 @@
             </div>
         </div>
     </section>
-    <!-----Recipes Section Start---------------------------------->
-
     <div class="recipe">
         <h2>Featured Recipes</h2>
         <div class="box">
