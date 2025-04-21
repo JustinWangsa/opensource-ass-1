@@ -17,6 +17,12 @@ body {
     color: #333;
 }
 
+.nav-but a{
+    text-decoration: none;
+    text-align: center;
+    padding: 10rem;
+    text-size-adjust: r100rm;
+}
 
 header {
     background-color:#333;
@@ -42,11 +48,18 @@ header p {
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 12px rgba(182, 29, 29, 0.1);
     display: inline-block;
     transform: translateX(-10%);
     opacity: 0;
     animation: showright 1s ease forwards;  
+}
+
+#title{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-shadow: tomato;
 }
 
 @keyframes showright {
@@ -113,13 +126,14 @@ ol li {
     margin-bottom: 8px;
 }
 
-body{
+/* body{
     background-image: url("/image/taiwan1.jpg");
     height: 10%;
+    background-repeat: no-repeat    ;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 #back-btn {
     position: absolute;
@@ -144,10 +158,27 @@ body{
 #ytube{
     position: relative;
     margin: auto;
+    margin-bottom: 10px;
     border: 3px solid black;
     padding: 5px;
     text-align: center;
     top: 50%;
     left: 17%;
     
+}
+
+.footer{
+    position: absolute;
+    margin: auto;
+    margin-left: 350px;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-image: url(/image/taiwan1.jpg);
+    background-position: fixed;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+
 }
