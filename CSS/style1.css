@@ -1,184 +1,149 @@
 /* 412855024 黃庭豪 justin wangsa*/
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html{
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f9;
-    color: #333;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #333;
 }
 
-.nav-but a{
-    text-decoration: none;
-    text-align: center;
-    padding: 10rem;
-    text-size-adjust: r100rm;
-}
 
 header {
-    background-color:#333;
-    color: #fff;
-    text-align: center;
-    padding: 30px 0;
+  background-color:#333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
 }
 
 header h1 {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 header p {
-    font-size: 1.1rem;
-    margin-top: 10px;
+  font-size: 1.1rem;
+  margin-top: 10px;
 }
 
 
 .container {
-    max-width: 900px;
-    margin: 20px auto;
-    margin-left: 600px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 10px 12px rgba(182, 29, 29, 0.1);
-    display: inline-block;
-    transform: translateX(-10%);
-    opacity: 0;
-    animation: showright 1s ease forwards;  
-}
-
-#title{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    text-shadow: tomato;
+  max-width: 900px;
+  margin: 2rem auto; 
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: showright 1s ease forwards;
+  opacity: 0;
 }
 
 @keyframes showright {
-    0% {
-        transform: translateX(-100%); 
-        opacity: 0; 
-    }
-    100% {
-        transform: translateX(0); 
-        opacity: 1; 
-    }
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
-
 h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #444;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #444;
 }
 
 
 p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-    line-height: 1.7;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  line-height: 1.7;
 }
 
 
 img {
-    max-width: 70%;
-    border-radius: auto;
-    margin-bottom: auto;
-    margin-top: auto;
-    margin-left: 15%;
-    border: 3px solid black;
-    border-radius: 4px;
-    padding: 5px;
+  max-width: 70%;
+  border-radius: auto;
+  margin-bottom: auto;
+  margin-top: auto;
+  margin-left: 15%;
+  border: 3px solid black;
+  border-radius: 4px;
+  padding: 5px;
 }
 
 
 .section-title {
-    font-size: 1.8rem;
-    color: #555;
-    margin-bottom: 10px;
+  font-size: 1.8rem;
+  color: #555;
+  margin-bottom: 10px;
 }
 
 
 ul {
-    list-style-type: square;
-    margin-left: 20px;
+  list-style-type: square;
+  margin-left: 20px;
 }
 
 ul li {
-    font-size: 1.1rem;
-    margin-bottom: 8px;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
 }
 
 ol {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 ol li {
-    font-size: 1.1rem;
-    margin-bottom: 8px;
-}
-
-/* body{
-    background-image: url("/image/taiwan1.jpg");
-    height: 10%;
-    background-repeat: no-repeat    ;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-
-#back-btn {
-    position: absolute;
-    background-color: #213032;
-    color: #fff;
-    text-decoration: none;
-    border: 2px solid black;
-    font-weight: bold;
-    padding: 13px 30px;
-    transform: .4s;
-    left: 50px;
-    top: 70px;
-}
-
-#back-btn:hover{
-    background-color: #97a2a3;
-    color: #213032;
-    border: 2px solid black;
-    cursor: pointer;
-}
-
-#ytube{
-    position: relative;
-    margin: auto;
-    margin-bottom: 10px;
-    border: 3px solid black;
-    padding: 5px;
-    text-align: center;
-    top: 50%;
-    left: 17%;
-    
-}
-
-.footer{
-    position: absolute;
-    margin: auto;
-    margin-left: 350px;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
 }
 
 body{
-    background-repeat: no-repeat;
-    background-image: url(/image/taiwan1.jpg);
-    background-position: fixed;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: 100% 100%;
+  background-image: url("/image/taiwan1.jpg");
+  height: 10%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+#back-btn {
+  position: absolute;
+  background-color: #213032;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid black;
+  font-weight: bold;
+  padding: 13px 30px;
+  transform: .4s;
+  left: 50px;
+  top: 50px;
+}
+
+#back-btn:hover{
+  background-color: #97a2a3;
+  color: #213032;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+#ytube{
+  position: relative;
+  margin: auto;
+  border: 3px solid black;
+  padding: 5px;
+  text-align: center;
+  top: 50%;
+  left: 17%;
+  
 }
