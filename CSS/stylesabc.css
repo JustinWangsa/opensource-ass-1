@@ -2,8 +2,8 @@ body {
   font-family: "Segoe UI", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fefefe;
-  color: #333;
+  background-color: #000;
+  color: #fefefe;
 }
 
 header {
@@ -11,38 +11,38 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  border-bottom: 1px solid #ddd;
-  background-color: #222;
+  border-bottom: 1px solid #444;
+  background-color: #111;
 }
 
-/* Unified hover effect for header and footer links */
 header nav a,
 footer nav a {
   text-decoration: none;
-  color: #fefefe; /* Default color for header links */
+  color: #fefefe;
   font-weight: 500;
-  transition: color 0.3s ease; /* Smooth transition for color change */
+  transition: color 0.3s ease;
 }
 
 header nav a:hover,
 footer nav a:hover {
-  color: orangered; /* Hover color for both header and footer links */
+  color: #ff4500;
 }
 
 .button-31 {
-  background-color: #fefefe;
+  background-color: #ff4500;
   border-radius: 4px;
-  color: black;
+  color: #fff;
   cursor: pointer;
   font-size: 16px;
   font-weight: 700;
   padding: 9px 20px;
   text-align: center;
-  transition: opacity 0.3s;
+  transition: opacity 0.3s, background-color 0.3s;
 }
 
 .button-31:hover {
-  opacity: 0.75;
+  background-color: #ff6347;
+  opacity: 0.9;
 }
 
 nav ul {
@@ -53,7 +53,7 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #333;
+  color: #fefefe;
   font-weight: 500;
 }
 
@@ -61,7 +61,8 @@ nav a {
   display: flex;
   justify-content: space-between;
   padding: 40px;
-  background-color: #fdf8f4;
+  background-color: #222;
+  color: #fefefe;
 }
 
 .hero-text {
@@ -73,25 +74,27 @@ nav a {
 }
 
 .highlight {
-  color: orangered;
+  color: #ff4500;
 }
 
 .hero-img img {
   width: 400px;
   border-radius: 10px;
+  border: 2px solid #444;
 }
 
 .blog-section {
-  padding: 10px 20px; /* Reduced top and bottom padding */
-  background-color: #fff;
+  padding: 10px 20px;
+  background-color: #111;
+  color: #fefefe;
 }
 
 .section-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid orangered;
-  margin-bottom: 10px; /* Reduced the bottom margin of the section header */
+  border-bottom: 2px solid #ff4500;
+  margin-bottom: 10px;
 }
 
 .section-header h2 {
@@ -106,27 +109,32 @@ nav a {
 }
 
 .blog-card {
-  background-color: #ffffff;
+  background-color: #222;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .blog-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
 }
 
 .blog-content {
   padding: 20px;
   font-size: 15px;
   line-height: 1.6;
+  color: #fefefe;
 }
 
 blog-card.wide {
   grid-column: span 2;
-  background: linear-gradient(135deg, #fdf8f4, #f8f8f8);
+  background: linear-gradient(
+    135deg,
+    #222,
+    #333
+  );
 }
 
 blog-card.wide .blog-content {
@@ -135,8 +143,8 @@ blog-card.wide .blog-content {
 }
 
 footer {
-  background-color: #222;
-  color: #fff;
+  background-color: #111;
+  color: #fefefe;
   padding: 20px 40px;
   text-align: center;
 }
@@ -149,7 +157,7 @@ footer .footer-content {
 }
 
 footer nav ul {
-  display: none; /* Removed the footer navigation links */
+  display: none;
 }
 
 footer .footer-content p {
