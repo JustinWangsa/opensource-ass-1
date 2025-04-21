@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!--
+Group Member
+412856139 黃輝宏
+412856089 李豪傑
+412416066 郭子達
+412855024 黃庭豪
+412855149 林樂安 
+-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,75 +24,51 @@
 
 <body>
     <header>
-        <div class="logo"> Recipes</div>
+        <div class="logo"> Asep Stroberi's Page</div>
         <div class="nav-bar">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Recipes</a></li>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Recipes">Recipes</a></li>
             </ul>
         </div>
     </header>
 
-    <div class="hero">
+    <div id="Home" class="hero">
         <div class="slideshow-container">
           <div class="mySlides fade">
-            <img src="../image/stinky_tofu_1.jpeg" style="width:100%">
-            <div class="text">Caption Text</div>
+            <img src="/image/wp1.jpg">
           </div>
           <div class="mySlides fade">
-            <img src="../image/popcorn_chicken.jpg" style="width:100%">
-            <div class="text">Caption Two</div>
+            <img src="/image/wp2.jpg">
           </div>
           <div class="mySlides fade">
-            <img src="../image/taiwan1.jpg" style="width:100%">
-            <div class="text">Caption Three</div>
+            <img src="/image/wp3.jpg">
           </div>
         </div>
         <br>
-
-        <div style="text-align:center">
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-        </div>
-
         <div class="hero-content">
           <h4>Unleash Your Culinary Passion</h4>
           <h1>Discover Taste Sensations</h1>
           <h3>Elevate Your Cooking Game</h3>
-          <div class="hero-button">
-            <button>Start Cooking</button>
-          </div>
         </div>
       </div>
       
-
-    <!----About Section Start---------------------------------->
-    <section class="about">
+    <section id="About" class="about">
         <h2>About Us</h2>
         <div class="main">
             <img src="/image/taiwan1.jpg" alt="">
             <div class="about-text">
-                <p>Welcome to our recipe website, where culinary inspiration meets delicious creations! Whether you're a
-                    seasoned chef or a passionate home cook, we are here to ignite your taste buds and guide you on a
-                    delightful culinary journey. Our extensive collection of recipes covers a wide range of cuisines,
-                    from comforting classics to innovative fusion dishes. Each recipe is thoughtfully crafted, tested,
-                    and presented with step-by-step instructions, ensuring that even the novice cook can create
-                    extraordinary meals. We believe that cooking is an art form that brings people together, and our
-                    goal is to empower you to explore your culinary creativity and make every meal a masterpiece. So
-                    come on in, explore our diverse recipe collection, and let's embark on a delightful gastronomic
-                    adventure together!</p>
-
+                <p>Welcome to our recipe playground where kitchen disasters turn into delicious masterpieces (eventually). Whether you're a seasoned chef or someone who just Googled "how to boil water," you're in the right place. We’ve got comfort food for your soul, fusion recipes to impress your date, and step-by-step guides so simple even your cat could follow (but please don’t let your cat cook). So grab your apron, pretend you're on a cooking show, and let’s whip up something amazing or at least edible. </p>
             </div>
         </div>
     </section>
-    <div class="recipe">
+    <div id="Recipes" class="recipe">
         <h2>Featured Recipes</h2>
         <div class="box">
             
             <div class="card">
-                <img class="tofu" src="/image/stinky_tofu_1.jpeg" alt="Stinky Tofu">
+                <img src="/image/stinky_tofu_1.jpeg" alt="Stinky Tofu">
                 <div class="content">
                     <h3>臭豆腐</h3>
                     <P>臭豆腐 also known as "stinky tofu"</P>
@@ -112,23 +95,22 @@
             </div>
             
             <div class="card">
-                <img src="r4.jfif" alt="">
+                <img src="/image/yehu.jpg" alt="Sweet Potato Balls">
                 <div class="content">
-                    <h3>Recipe 4</h3>
-                    <P>Lorem ipsum dolor sit amet,consectetur adipiscing elit.</P>
-                    <button>View Recipe</button>
+                    <h3>地瓜球</h3>
+                    <P>地瓜球 also known as "Sweet Potato Balls"</P>
+                    <button onclick="window.location.href='/HTML/yehuda.html'">View Recipe</button>
                 </div>
             </div>
             
             <div class="card">
-                <img src="r5.jfif" alt="">
+                <img class="jeffta" src="/image/jeffta.jpg" alt="">
                 <div class="content">
-                    <h3>Recipe 5</h3>
-                    <P>Lorem ipsum dolor sit amet,consectetur adipiscing elit.</P>
-                    <button>View Recipe</button>
+                    <h3>蚵仔煎</h3>
+                    <P>蚵仔煎 also known as  "Oyster Omelette"</P>
+                    <button onclick="window.location.href='/HTML/jeffta.html'">View Recipe</button>
                 </div>
             </div>
-            
                 </div>
             </div>
         </div>
