@@ -6,23 +6,22 @@
     <head>
         <link rel="stylesheet" href="/CSS/style1.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <title>臭豆腐 - stinky tofu</title>
+        <title id="title">臭豆腐 - stinky tofu</title>
     </head>
     
     <body>
         
         <header>
-            <h1>Taiwan Stinky Tofu 臭豆腐</h1>
-            <h5>412855024 黃庭豪 justin wangsa</h5>
-            <p>Exploring the unique taste and history of Taiwan's famous street food</p>
-            <button id="back-btn" onclick="history.back()">
-                <span class="fa-solid fa-circle-chevron-left"> &nbsp;  Main  Page</span>
-            </button>
+            <div class="nav-bar">
+              <div class="logo"><span id="typewriter"></span></div>
+                <ul>
+                    <li><a href="#intro">Home</a></li>
+                    <li><a href="#recipe">recipe</a></li>
 
-
+                </ul>
+            </div>
         </header>
-        
-        
+    
         
         <div class="container">
             
@@ -32,11 +31,13 @@
                 <p>
                     <b>stinky tofu (臭豆腐, chòu dòufu) </b> is a popular Taiwanese street food that, as the name suggests, has a distinct and strong odor. It is a fermented tofu dish deep-fried to golden perfection and served with pickled cabbage or spicy sauces. Despite its pungent smell, stinky tofu is beloved by locals and tourists alike for its rich flavor and crispy texture.
                 </p>
-                <img id="img" src="/image/stinky_tofu_1.jpeg" alt="A plate of stinky tofu with pickled cabbage">
+                <img id="img" src="/image/tofu1.jpg" alt="A plate of stinky tofu with pickled cabbage">
             </section>
 
             <!-- history-->
             <section id="history" style="animation-delay: 0.4;">
+
+                <br>
                 <h2>A Brief History</h2>
                 <p>
                     The origins of stinky tofu are somewhat unclear, but it is widely believed to have been introduced during the Qing Dynasty. The fermented tofu was initially made by rural families using traditional methods to preserve tofu in a brine solution. The smell was a natural result of the fermentation process. Over time, this humble dish became a staple in night markets and street food stalls across Taiwan, evolving into the beloved snack it is today.
@@ -64,20 +65,22 @@
                     <li>Ginger, garlic, and chili (optional for extra flavor)</li>
                 </ul>
 
-                <p><strong>Instructions:</strong></p>
-                
+                <br>
+
+                <h4><strong>Instructions:</strong></h4>
                 <ol>
                     <li>Soak the tofu cubes in the fermented brine for at least 24 hours.</li>
                     <li>Heat the oil in a deep fryer or a large pot to 350°F (175°C).</li>
                     <li>Carefully drop the tofu cubes into the hot oil and fry until golden brown and crispy (about 4-5 minutes).</li>
                     <li>Remove the tofu from the oil and drain on paper towels.</li>
                     <li>Serve hot with pickled cabbage or drizzle with spicy sauce for extra kick!</li>
-                
                 </ol>
             </section>
 
             <section>
-                <p></p>
+                
+                <br>
+
                 <iframe id="ytube" width="560" height="315" 
                     src="https://www.youtube.com/embed/3Ruxsrs-uOg?si=FvtspO9bwMyit4AV" 
                     title="YouTube video player" frameborder="0" 
@@ -89,6 +92,11 @@
 
         </div>
 
+        <footer>
+              Coded by 黃庭豪 .
+
+        </footer>
+        
     </body>
     
 
