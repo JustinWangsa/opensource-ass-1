@@ -20,40 +20,63 @@ body {
 }
 
 
+header {
+  background-color: #2A3132;
+  padding: 1rem 2rem;
+}
+
+
 .nav-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #2A3132;
-  padding: 1rem 2rem;
-  position: relative;
-  margin-left: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.justin {
+  font-size: 2rem;
+  color: #edffef;
+  font-weight: bold;
 }
 
 
 .nav-bar ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 30px;
   margin: 0;
   padding: 0;
-
 }
 
 .nav-bar ul li a {
   color: #edffef;
   text-decoration: none;
-  font-size: 2rem;
-  padding: 8px 12px;
+  font-size: 1.2rem;
+  padding: 8px 16px;
   border-radius: 4px;
-  margin-left: 50px;
-  display: flex;
+  transition: background-color 0.3s ease;
 }
 
 .nav-bar ul li a:hover {
   background-color: #3b4b4d;
 }
 
+
+header h1 {
+  font-size: 2.5rem;
+  color: #edffef;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-top: 0.5rem;
+  text-align: center;
+}
 header h1 {
   font-size: 2.5rem;
 }
