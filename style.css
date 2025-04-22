@@ -5,180 +5,161 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
-html {
+html{
     scroll-behavior: smooth;
-    height: 100%;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #213032;
-    padding: 15px;
+header{
+width: 100%;
+height: 80px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 100px;
+background: #acb4b5;
 }
 
-.hero {
+.hero{
     position: relative;
-    height: 100vh;
+    height: 70vh;
     width: 100%;
     overflow: hidden;
 }
 
-.hero img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-}
-
-.mySlides img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.slideshow-container {
+.hero-bg{
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
+    background-image: url("image/stinky_tofu_1.jpeg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
     z-index: 0;
 }
 
-.mySlides {
-    display: none;
-}
-
-img {
-    vertical-align: middle;
-}
-
-.slideshow-container {
-    width: 100%;
+.hero-content{
     position: relative;
-    margin: 0;
-}
-
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-.active {
-    background-color: #717171;
-}
-
-.fade {
-    animation-name: fade;
-    animation-duration: 4s;
-}
-
-@keyframes fade {
-    from {
-        opacity: .3
-    }
-    to {
-        opacity: .5
-    }
-}
-
-@media only screen and (max-width: 300px) {
-    .text {
-        font-size: 11px;
-    }
-}
-
-.hero-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    z-index: 1;
     color: white;
-    z-index: 2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 1rem;
+    padding: 2rem;
 }
 
-.logo {
+.hero-button{
+    margin-top: 1rem;
+}
+
+.hero-button button{
+    padding: 0.8rem 1.5rem;
+    background-color: #213032;
+    color: white;
+    border: 2px solid black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color .3s ease;
+    padding: 13px 30px;
+}
+
+.hero-button button:hover {
+    background-color: #97a2a3;
+    color: #213032;
+    border: 2px solid black;
+    cursor: pointer;
+  }
+
+.logo{
     font-size: 28px;
     font-weight: bold;
-    color: #ffffff;
-    margin-left: 15px;
+    color: #213032;
+    margin-right: 40px;
 }
 
-.nav-bar ul {
+.nav-bar ul{
     display: flex;
     list-style: none;
 }
 
-.nav-bar ul li a {
+.nav-bar ul li a{
     display: block;
     color: #edffef;
-    font-size: 25px;
-    padding: 10px 25px;
+    font-size: 20px;
+    padding: 8px 25px;
     transition: .2s;
     margin: 0 5px;
     text-decoration: none;
 }
 
-.nav-bar ul li:hover a {
+.nav-bar ul li:hover a{
     background-color: #97a2a3;
     color: #213032;
     cursor: pointer;
 }
 
-.content {
+.content{
     position: absolute;
     top: 50%;
     left: 8%;
     transform: translateY(-50%);
 }
 
-h1 {
+h1{
     color: #213032;
-    font-size: 85px;
-    margin: 20px 0;
+    font-size: 75px;
+    margin: 20px 0px 20px;
 }
 
-h3 {
+h3{
     color: #edffef;
-    font-size: 35px;
+    font-size: 25px;
     margin-bottom: 50px;
 }
 
-h4 {
+h4{
     color: #edffef;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     font-size: 20px;
 }
 
-.button {
+.button{
     background-color: #213032;
     color: #fff;
     text-decoration: none;
     border: 2px solid black;
     font-weight: bold;
     padding: 13px 30px;
-    transition: 0.4s;
+    transform: .4s;
 }
 
-.button:hover {
+.button:hover{
     background-color: #97a2a3;
     color: #213032;
     border: 2px solid black;
     cursor: pointer;
 }
 
-.about {
+.about{
     width: 100%;
-    padding: 100px 0;
+    padding: 100px 0px;
     background-color: #314e52;
 }
 
-.main {
+.about img{
+    height: auto;
+    width: 430px;
+    border-radius: 20px 0 20px 0;
+}
+
+.main{
     width: 1130px;
     max-width: 95%;
     margin: 0 auto;
@@ -187,73 +168,67 @@ h4 {
     justify-content: space-between;
 }
 
-.about img {
-    width: 500px;
-    height: auto;
-    border-radius: 20px;
-}
-
-.about h2 {
-    color: #edffef;
+.about h2{
+    color:#edffef;
     font-size: 75px;
     text-transform: capitalize;
-    margin: 0 0 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
-.about-text p {
+.about-text p{
     color: #97a2a3;
     letter-spacing: 1px;
     line-height: 28px;
     font-size: 18px;
-    text-align: justify;
+    margin-bottom: 45px;
 }
 
-.about-text {
-    max-width: 600px;
-    align-items: center;
+.about-text{
+    width: 500px;
 }
 
-.recipe {
+.recipe{
     width: 100%;
-    padding: 100px 0;
+    padding: 100px 0px;
     background-color: #213032;
 }
 
-.recipe h2 {
+.recipe h2{
     color: #edffef;
     font-size: 75px;
     text-transform: capitalize;
-    margin: 0 0 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
-.box {
+.box{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
-.card {
+.card{
     position: relative;
     width: 300px;
     height: 300px;
     margin: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     overflow: hidden;
 }
 
-.box .card img {
+.box .card img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
-
-.box .card .content {
+.box .card .content{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -266,36 +241,33 @@ h4 {
     transition: opacity 0.3s;
 }
 
-.box .card:hover .content {
+.box .card:hover .content{
     opacity: 1;
 }
-
-.card h3 {
+.card h3{
     font-size: 20px;
-    margin: 0 0 10px;
+    margin-top: 0;
+    margin-bottom: 10px;
     color: #213032;
 }
-
-.box .card p {
+.box .card p{
     font-size: 14px;
     margin-bottom: 10px;
 }
-
-.box .card button {
-    position: relative;
+.box .card button{
+    position:relative;
     background-color: #213032;
     color: #fff;
     text-decoration: none;
     border: 2px solid black;
     font-weight: bold;
-    transition: 0.4s;
+    transform:.4s;
     padding: 13px 30px;
-}
-
-.box .card button:hover {
+ }
+ .box .card button:hover{
     background-color: #97a2a3;
     color: #213032;
     border: 2px solid black;
     cursor: pointer;
-}
+ }
 
